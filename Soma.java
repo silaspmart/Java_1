@@ -1,9 +1,9 @@
 public class Soma {
     public static void main(String[]args){
-        int a = 38;
-        int b = 57;
+        int a = 9538;
+        int b = 7357;
         int soma = a + b;
 
-        System.out.println("A soma de " + a + " + " + b + " é: " + soma);
+        System.out.println("A soma de " + a + " + " + b + " = " + soma);
     }
 }
