@@ -7,11 +7,11 @@ public class SituacaoAluno {
         double nota1 = 5.8, nota2 = 8.6, media =(nota1+nota2)/2;
 
         if (media == 10) {
-            System.out.println("\nAprovado, parabens!\n"); 
+            System.out.println("\nSua media foi de " +media+ ". Aprovado, parabens!\n"); 
         } else if (media >=7) {
-            System.out.println("\nAprovado\n");
+            System.out.println("\nSua media foi de " +media+ ".Aprovado\n");
         } else {
-            System.out.println("\nReprovado\n");
+            System.out.println("Sua media foi de " +media+ ".\nReprovado\n");
         }
     }
 }
