@@ -7,20 +7,20 @@ import java.util.Scanner;
 public class ListaDeCompras {
     public static void main(String [] args) {
         int N = 5;
-        Scanner ler = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String [] itens = new String [N];
 
         System.out.println("\n======== LISTA DE COMPRAS ========\n");
 
-        for (int i=0; i<N;i++){
+        for (int i=0; i<itens.length;i++){
             System.out.print("Digite o item " +(i+1)+ " da lista: ");
-            itens [i] = ler.nextLine();
+            itens [i] = sc.nextLine();
         }
         System.out.println("\nSua lista de compras: ");
-        for (int i=0; i<N; i++) {
-            System.out.println("> " +itens[i]);
+        for (int i=0; i<itens.length; i++) {
+            System.out.printf("%d - %s \n", i+1, itens[i]);
         }
         System.out.println("\n");
-        ler.close();
+        sc.close();
     }
 }

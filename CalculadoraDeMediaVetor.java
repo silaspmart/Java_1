@@ -7,21 +7,21 @@ import java.util.Scanner;
 public class CalculadoraDeMediaVetor {
     public static void main(String [] args) {
         int N = 4;
-        Scanner ler = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         double [] notas = new double [N];
         double soma = 0;
 
         System.out.println("\n======== CALCULADORA DE MEDIA ========\n");
 
-        for (int i=0; i<N; i++){
-            System.out.print("Digite a nota da avaliacao " +(i+1)+ ": ");
-            notas [i] = ler.nextDouble();
-            soma = soma + notas[i];
+        for (int i=0; i<notas.length; i++){
+            System.out.printf("Digite a nota da avaliacao %d: ", i+1);
+            notas [i] = sc.nextDouble();
+            soma += notas[i];
         }
 
-        double media = soma/4;
+        double media = soma/notas.length;
         System.out.printf("\nSua media final: %.2f" , media);
         
-        ler.close();
+        sc.close();
     }
 }

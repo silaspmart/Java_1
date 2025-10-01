@@ -18,12 +18,13 @@ public class MontadorDeGrid {
         }
 
         System.out.println("\n=== Matriz formatada ===\n");
-        
+
         for (int i=0; i<L; i++) {
             for (int j=0; j<C; j++) {
                 System.out.print(+matriz[i][j]+ " | ");
             } 
             System.out.println();
         }  
+        ler.close();
     }
 }
