@@ -20,7 +20,7 @@ public class ListaDeCompras {
         for (int i=0; i<itens.length; i++) {
             System.out.printf("%d - %s \n", i+1, itens[i]);
         }
-        System.out.println("\n");
+        System.out.println();
         sc.close();
     }
 }

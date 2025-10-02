@@ -6,7 +6,7 @@ public class CalculadoraAreaRetangulo {
     public  static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
         float base, altura;
-        System.out.println ("========= CALCULADORA DE AREA =========");
+        System.out.println ("\n========= CALCULADORA DE AREA =========");
         System.out.print ("Informe a base: ");
         base = sc.nextInt();
         System.out.print ("Informe a altura: ");

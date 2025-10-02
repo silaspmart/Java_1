@@ -7,7 +7,7 @@ public class E_Maior {
         Scanner sc = new Scanner(System.in);
         int num1, num2;
 
-        System.out.println("******* DESCUBRA O MAIOR NÚMERO *******");
+        System.out.println("\n******* DESCUBRA O MAIOR NÚMERO *******");
         System.out.print("Digite um numero: ");
         num1 = sc.nextInt();
         System.out.print("Digite outro numero: ");

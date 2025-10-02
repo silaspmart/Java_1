@@ -1,7 +1,5 @@
-// Criar uma nova pasta com o nome Aula2 e abrir no VSCode
-// Criar a classe ExerciciosVariaveis
-// Declarar as variaveis: nome, idade, peso e altura
-// Devera ser impresso o resultado 
+/* Criar uma nova pasta com o nome Aula2 e abrir no VSCode. Criar a classe ExerciciosVariaveis
+Declarar as variaveis: nome, idade, peso e altura. Devera ser impresso o resultado */  
 
 import java.util.Scanner;
 
@@ -11,21 +9,22 @@ public class ExercicioVariaveis {
         int idade;
         String nome;
         double altura, peso;
-        
-        System.out.print("Informe o nome do colaborador: ");
+        System.out.println("\n========== CADASTRO DE PESSOAS ==========\n");
+        System.out.print("Informe o nome: ");
         nome = sc.nextLine();
-        System.out.print("Informe a idade do colaborador: ");
+        System.out.print("Informe a idade: ");
         idade = sc.nextInt();
-        System.out.print("Informe a altura do colaborador: ");
+        System.out.print("Informe a altura: ");
         altura = sc.nextDouble();
-        System.out.print("Informe o peso do colaborador: ");
+        System.out.print("Informe o peso: ");
         peso = sc.nextDouble();
 
-        System.out.println("O funcionario " +nome+ " tem:");
-        System.out.println("Idade: %d anos: " +idade);
-        System.out.println("Altura: " +altura);
-        System.out.println("Idade: " +peso);
-
+        System.out.println("\n-----------------\n" +nome+ " tem:");
+        System.out.printf("Idade: %d anos \n", idade);
+        System.out.printf("Altura: %.2f \n", altura);
+        System.out.printf("Peso: %.2f kg\n-----------------", peso);
+        System.out.println();
+        
         sc.close();
     }
 }

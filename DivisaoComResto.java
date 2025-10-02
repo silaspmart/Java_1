@@ -8,7 +8,7 @@ public class DivisaoComResto {
         Scanner sc = new Scanner(System.in);
         int totalDeItens, capacidadeDaCaixa;
 
-        System.out.print("Informe o total de itens: ");
+        System.out.print("\n-------- CALCULO DE CAPACIDADE --------\nInforme o total de itens: ");
         totalDeItens = sc.nextInt();
         System.out.print("Informe a capacidade das caixas: ");
         capacidadeDaCaixa = sc.nextInt();

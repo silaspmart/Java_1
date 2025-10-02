@@ -6,7 +6,7 @@ public class CalculadoraSalario {
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
         double salario, comDesconto;
-        System.out.print("Informe o valor de seu salário em R$: ");
+        System.out.print("\n======== CALCULO DE DESCONTO ======== \nInforme o valor de seu salário em R$: ");
         salario = sc.nextDouble();
 
         if (salario <= 1751.81) {
@@ -19,7 +19,7 @@ public class CalculadoraSalario {
             comDesconto = salario*0.89;
         }
         System.out.printf("\nO seu salario e de: R$ %.2f\nCom desconto fica: R$ %.2f", salario, comDesconto);
-
+        System.out.println("\n--------------------------------\n");
         sc.close();
     }
 }

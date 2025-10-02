@@ -17,6 +17,7 @@ public class NotasAlunos {
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
         NotasAlunos [] turma = new NotasAlunos[3];
+        System.out.println("\n****** CADASTRO DE ALUNOS ******");
 
         for (int i=0; i<turma.length; i++) {
             turma[i] = new NotasAlunos();
@@ -27,6 +28,7 @@ public class NotasAlunos {
             turma[i].matricula = sc.nextInt();
             System.out.printf("Informe a nota do aluno %d: ",i+1);
             turma[i].notaFinal = sc.nextDouble();
+            System.out.println();
         }
         
         System.out.println("\n****** CADASTRO DE ALUNOS *****\n");;

@@ -18,9 +18,9 @@ public class CalculadoraDeMediaVetor {
             notas [i] = sc.nextDouble();
             soma += notas[i];
         }
-
         double media = soma/notas.length;
         System.out.printf("\nSua media final: %.2f" , media);
+        System.out.println();
         
         sc.close();
     }

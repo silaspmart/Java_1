@@ -8,7 +8,7 @@ public class ClassificadorDeIdade {
         Scanner sc = new Scanner(System.in);
         int idade;
 
-        System.out.print("Informe a sua idade: ");
+        System.out.print("\n========= CALACULADORA DE FAIXA ETARIA =========\nInforme a sua idade: ");
         idade = sc.nextInt();
 
         if (idade < 12) {

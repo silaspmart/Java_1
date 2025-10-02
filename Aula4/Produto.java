@@ -1,6 +1,6 @@
 /* -> Crie uma nova classe cahamada produto
- * -> Adicion a ela os seguintes atributos: String nome, int código, double preço
- * -> No método maiin, crie uma instancia (objeto) da classe produto
+ * -> Adicione a ela os seguintes atributos: String nome, int código, double preço
+ * -> No método main, crie uma instancia (objeto) da classe produto
  * -> Peça para o usuario digitar os produtos via Scanner
  *   Ao final exiba os dados do produto que você cadastrou  */
 
@@ -16,7 +16,7 @@ public class Produto {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Produto prod1 = new Produto();
-
+        System.out.println("\n-------- CADASTRO DE PRODUTOS --------");
         System.out.print("Cadastre o nome do produto: ");
         prod1.nome = sc.nextLine();
         System.out.print("Cadastre o codigo do produto: ");
