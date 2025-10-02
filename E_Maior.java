@@ -1,9 +1,17 @@
-// Faça um programa com duas variaveis inteiras ivicializadas com um valor, compare e imprima na tela o maior valor.
+// Faça um programa com duas variaveis inteiras, compare e imprima na tela o maior valor.
+
+import java.util.Scanner;
 
 public class E_Maior {
     public static void main(String[] args) {
-        int num1 = 18;
-        int num2 = 18;
+        Scanner sc = new Scanner(System.in);
+        int num1, num2;
+
+        System.out.println("******* DESCUBRA O MAIOR NÚMERO *******");
+        System.out.print("Digite um numero: ");
+        num1 = sc.nextInt();
+        System.out.print("Digite outro numero: ");
+        num2 = sc.nextInt();
 
         if (num1 == num2) {
             System.out.println("\nOs numeros são iguais\n");
@@ -12,5 +20,7 @@ public class E_Maior {
         } else {
             System.out.println("\nO maior numero e: " + num2+ "\n");
         }
+
+        sc.close();
     }
 }

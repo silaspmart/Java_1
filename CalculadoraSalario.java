@@ -1,9 +1,13 @@
-// Crie uma classe com o nome CalculadoraSalario e defina uma variavel com o nome 'salario', inicialize a variavel com algum valor e
-// exiba no console o valor com desconto do INSS
+// Crie uma classe com o nome CalculadoraSalario e defina uma variavel com o nome 'salario'. Exiba no console o valor com desconto do INSS
+
+import java.util.Scanner;
 
 public class CalculadoraSalario {
     public static void main(String [] args) {
-        double salario = 6000, comDesconto;
+        Scanner sc = new Scanner(System.in);
+        double salario, comDesconto;
+        System.out.print("Informe o valor de seu salário em R$: ");
+        salario = sc.nextDouble();
 
         if (salario <= 1751.81) {
             comDesconto = salario*0.92;
@@ -14,6 +18,8 @@ public class CalculadoraSalario {
         } else {
             comDesconto = salario*0.89;
         }
-        System.out.println("\nO seu salario e de: " +salario+ "\nCom desconto fica: " +comDesconto);
+        System.out.printf("\nO seu salario e de: R$ %.2f\nCom desconto fica: R$ %.2f", salario, comDesconto);
+
+        sc.close();
     }
 }

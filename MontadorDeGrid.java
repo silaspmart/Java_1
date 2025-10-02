@@ -6,25 +6,25 @@ import java.util.Scanner;
 
 public class MontadorDeGrid {
     public static void main(String [] args) {
-        Scanner ler = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int L = 3, C = 3;
         int [][] matriz = new int [L] [C];
 
-        for (int i=0; i<L; i++) {
-            for (int j=0; j<C; j++) {
-                System.out.print("Digite o " +(j+1)+ " numero da " + (i+1)+ " linha: ");
-                matriz [i] [j]= ler.nextInt();
+        for (int i=0; i<matriz.length; i++) {
+            for (int j=0; j<matriz[i].length; j++) {
+                System.out.printf("Digite o %d numero da %d linha: ", i+1, j+1);
+                matriz [i] [j]= sc.nextInt();
             } 
         }
 
-        System.out.println("\n=== Matriz formatada ===\n");
+        System.out.println("\n=== Matriz formatada ===");
 
-        for (int i=0; i<L; i++) {
-            for (int j=0; j<C; j++) {
-                System.out.print(+matriz[i][j]+ " | ");
+        for (int i=0; i<matriz.length; i++) {
+            for (int j=0; j<matriz[i].length; j++) {
+                System.out.printf("%d | \t", matriz[i][j]);
             } 
             System.out.println();
         }  
-        ler.close();
+        sc.close();
     }
 }
