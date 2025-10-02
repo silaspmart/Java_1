@@ -5,22 +5,22 @@
         b) Peça ao usuario para digitar o nome, matricula e nota daquele aluno
     Ao final do cadastro, use outro laço for para exibir os dados de todos os alunos da turma*/
 
-package Aula4;
-
+package Aula4.SistemaAluno;
 import java.util.Scanner;
-
-public class NotasAlunos {
-    String nome;
-    int matricula;
-    double notaFinal;
+public class SistemaEscolar {
 
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
+<<<<<<< HEAD:Aula4/NotasAlunos.java
         NotasAlunos [] turma = new NotasAlunos[3];
         System.out.println("\n****** CADASTRO DE ALUNOS ******");
+=======
+        Aluno [] turma = new Aluno[3];
+        System.out.println("\n******* CADASTRO DE ALUNOS *******");
+>>>>>>> e159437 (Melhorias na estrutura de pastas e nos códigos):Aula3/SistemaAluno/SistemaEscolar.java
 
         for (int i=0; i<turma.length; i++) {
-            turma[i] = new NotasAlunos();
+            turma[i] = new Aluno();
 
             System.out.printf("Informe o nome do aluno %d: ",i+1);
             turma[i].nome = sc.next();
@@ -30,13 +30,11 @@ public class NotasAlunos {
             turma[i].notaFinal = sc.nextDouble();
             System.out.println();
         }
-        
-        System.out.println("\n****** CADASTRO DE ALUNOS *****\n");;
+        System.out.println("\n****** PAINEL DA SITUAÇÃO DOS ALUNOS *****\n");;
 
         for (int i=0; i<turma.length; i++) {
-            System.out.printf("Aluno %d: %s \n", i+1, turma[i].nome);
-            System.out.printf("Matricula: %d \n", turma[i].matricula);
-            System.out.printf("Nota %.2f: \n", turma[i].notaFinal);
+            turma[i].mostrarDados();
+            turma[i].verificarAprovacao();
             System.out.println("--------------------------");
         }
         sc.close();
