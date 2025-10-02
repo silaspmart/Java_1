@@ -11,13 +11,8 @@ public class SistemaEscolar {
 
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD:Aula4/NotasAlunos.java
-        NotasAlunos [] turma = new NotasAlunos[3];
-        System.out.println("\n****** CADASTRO DE ALUNOS ******");
-=======
         Aluno [] turma = new Aluno[3];
         System.out.println("\n******* CADASTRO DE ALUNOS *******");
->>>>>>> e159437 (Melhorias na estrutura de pastas e nos códigos):Aula3/SistemaAluno/SistemaEscolar.java
 
         for (int i=0; i<turma.length; i++) {
             turma[i] = new Aluno();
