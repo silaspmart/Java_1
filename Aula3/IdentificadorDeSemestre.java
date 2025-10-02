@@ -1,3 +1,4 @@
+package Aula3;
 /*  Crie uma nova classe com o nome "IdentificadorDeSemestre". Crie uma variavel 'numeroDoMes' e utilize o 
     operador ternario para verificar se o mes pertence ao primeiro ou ao segundo semestre */
 

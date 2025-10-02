@@ -1,3 +1,4 @@
+package Aula3;
 // Criar uma nova classe cm o nome ClassificadorDeIdade. Crie uma variavel idade e use uma estrutura if-else para classificar e exibir
 // no console se a pessoa é 'criança', 'adolescente', 'adulto' ou 'idoso'
 

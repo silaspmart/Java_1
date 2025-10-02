@@ -1,3 +1,4 @@
+package Aula3;
 /* Construa uma classe MontadorDeGrid que permita ao usuário preencher um grid numérico de 3x3. O programa deve usar laços
 aninhados e Scanner para solicitar um número para cada célula da matriz. Após o preenchimento completo, exiba a matriz no
 console, formatada como uma grade com colunas bem alinhadas. */

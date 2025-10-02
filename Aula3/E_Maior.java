@@ -1,3 +1,4 @@
+package Aula3;
 // Faça um programa com duas variaveis inteiras, compare e imprima na tela o maior valor.
 
 import java.util.Scanner;

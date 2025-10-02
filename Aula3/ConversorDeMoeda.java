@@ -1,3 +1,4 @@
+package Aula3;
 // Crie uma nova classe com o nome ConversorDeMoeda. Crie uma variavel valorEmDolar e uma taxaDeCambio. 
 // Calcule e exiba o valor convertido para reais (R$)
 

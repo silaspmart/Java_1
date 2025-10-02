@@ -1,3 +1,4 @@
+package Aula3;
 // Criar uma nova classe com o nome DivisaoComResto. Crie duas variaveis inteiras, totalDeItens e capacidadeDaCaixa. Calcule quantas caixas serão 
 // preenchidas completamente e quantos itens sobrarão
 

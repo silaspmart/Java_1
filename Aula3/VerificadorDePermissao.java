@@ -1,3 +1,4 @@
+package Aula3;
 // Criar uma nova classe com o nome VerificadorDePermissao. Crie duas variaveis, 'altura' e 'estaAcompanhado'. Verifique e exiba no console se a pessoa pode 
 // entrar no brinquedo, sabendo que a regra é ter altura minima de 1,60m  ou estar acompanhada
 

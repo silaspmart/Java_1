@@ -1,3 +1,4 @@
+package Aula3;
 /* Crie uma classe chamada ListaDeCompras que funcione como um assistente pessoal. O programa deve solicitar ao usuário, via
 Scanner, que digite 5 itens de supermercado. Armazene cada item em um vetor de String e, ao final, exiba a lista completa de
 forma organizada no console. */

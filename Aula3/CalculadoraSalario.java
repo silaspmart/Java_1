@@ -1,3 +1,4 @@
+package Aula3;
 // Crie uma classe com o nome CalculadoraSalario e defina uma variavel com o nome 'salario'. Exiba no console o valor com desconto do INSS
 
 import java.util.Scanner;

@@ -1,3 +1,4 @@
+package Aula3;
 // Criar uma nova classe com o nome CalculadoraAreaRetangulo. Crie 2 variaveis com o nome base e altura e exiba a area do retangulo 
 
 import java.util.Scanner;

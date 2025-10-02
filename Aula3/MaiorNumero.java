@@ -1,3 +1,4 @@
+package Aula3;
 /* Crie uma classe MaiorNumero que analise um conjunto de pontuações. Peça ao usuário para inserir 6 números inteiros, que
 podem representar pontuações de um jogo, usando Scanner ou JOptionPane. Armazene esses números em um vetor, processe
 os dados para encontrar a maior pontuação e, ao final, exiba o recorde encontrado. */

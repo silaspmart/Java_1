@@ -1,3 +1,4 @@
+package Aula3;
 /* Desenvolva uma classe CalculadoraDeMediaVetor para calcular a média de um aluno. Utilizando Scanner, o programa deve
 solicitar as 4 notas bimestrais, armazenando-as em um vetor de double. Após a inserção de todas as notas, calcule a média final
 e exiba o resultado formatado com duas casas decimais. */
