@@ -14,6 +14,6 @@ public class Programa {
 
         joao.endereco = endDoJoao;
 
-        System.out.println("O "+joao.nome+" mora na cidade de "+joao.endereco.cidade);
+        System.out.println("\nO "+joao.nome+" mora na cidade de "+joao.endereco.cidade+ "\n");
     }
 }

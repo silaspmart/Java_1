@@ -5,6 +5,6 @@ public class DadosDoLivro {
         Autor livro = new Autor("Machado de Assis","Brasileiro");
         Livro publicacao = new Livro("Dom Casmurro",1899, livro);
 
-        System.out.println("O livro '" +publicacao.titulo+ "' foi escrito por " +livro.nome+ " em " +publicacao.ano);
+        System.out.println("\nO livro '" +publicacao.titulo+ "' foi escrito por " +livro.nome+ " em " +publicacao.ano+ "\n");
     }
 }
