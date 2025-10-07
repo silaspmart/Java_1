@@ -8,3 +8,4 @@ public class Jogador {
         this.posicao = posicao;
     }
 }
+// Cria um novo 'tipo' de variavel
