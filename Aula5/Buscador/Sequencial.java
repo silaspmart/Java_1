@@ -1,4 +1,4 @@
-package Aula5.Buscador;
+package Aula5.Buscador; // olha os numeros em sequencia ate achar o numero procurado (a=b?)
 
 public class Sequencial {
     public static int buscaSequencial(int[] vetor, int busca) {

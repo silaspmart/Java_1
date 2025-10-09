@@ -1,4 +1,4 @@
-package Aula5.BubleSort;
+package Aula5.BubleSort;   // Vai comparando e trocando nas posições caso "a < b"
 
 import java.util.Random;
 

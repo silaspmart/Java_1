@@ -1,4 +1,4 @@
-package Aula5.SelectionSort;
+package Aula5.SelectionSort; // percorre o vetor e vai 'passando' o numero menor para a esquerda até ordernar
 
 public class Ordenador {
     public static void selectionSort (int[] vetor) {
