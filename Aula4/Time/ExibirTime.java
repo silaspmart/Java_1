@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ExibirTime {
     public static void main(String[] args) {
         TimeDeFutebol meuTime = new TimeDeFutebol("Derrotinha F.C."); 
-            // chama o construtor "TimeDeFutebol" e cria a vriavel 'meuTime' que recebe o nome definido pelo ususario
+            // chama o construtor "TimeDeFutebol" e cria a variavel 'meuTime' que recebe o nome definido pelo ususario
         String nome, posicao;
         int tamanho = 11;
         Scanner sc = new Scanner(System.in);
