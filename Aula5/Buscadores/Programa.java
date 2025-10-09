@@ -1,4 +1,4 @@
-package Aula5.Buscador;
+package Aula5.Buscadores;
 
 public class Programa {
     public static void main(String[] args) {

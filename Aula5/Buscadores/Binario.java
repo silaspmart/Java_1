@@ -1,4 +1,4 @@
-package Aula5.Buscador; // Busca um numero dividindo um vetor em metades sucessivas
+package Aula5.Buscadores; // Busca um numero dividindo um vetor em metades sucessivas
 
 public class Binario {
     public static int buscaBinaria(int [] vetor, int busca) {

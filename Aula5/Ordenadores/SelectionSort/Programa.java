@@ -1,4 +1,4 @@
-package Aula5.SelectionSort;
+package Aula5.Ordenadores.SelectionSort;
 
 import java.util.Random;
 

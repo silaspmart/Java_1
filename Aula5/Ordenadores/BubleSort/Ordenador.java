@@ -1,4 +1,4 @@
-package Aula5.BubleSort;
+package Aula5.Ordenadores.BubleSort;
 
 public class Ordenador {
     public static void bubbleSort(int[] vetor) {
