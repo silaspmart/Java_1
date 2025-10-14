@@ -21,12 +21,12 @@ public class Produto {
 
     public void exibirInformacoes() {
         System.out.println("******************************");
-        System.out.printf("Código: %s", codigo);
-        System.out.printf("Nome: %s", nome);
-        System.out.printf("Categoria: %s", categoria);
-        System.out.printf("Preço: R$ $.2f", preco);
-        System.out.printf("Quantidade em Estoque: %i", qtdEstoque);
-        System.out.printf("Valor Total: R$ %.2f", calcularValorTotal());
+        System.out.printf("Código: %s\n", codigo);
+        System.out.printf("Nome: %s\n", nome);
+        System.out.printf("Categoria: %s\n", categoria);
+        System.out.printf("Preço: R$ %.2f\n", preco);
+        System.out.printf("Quantidade em Estoque: %d\n", qtdEstoque);
+        System.out.printf("Valor Total: R$ %.2f\n", calcularValorTotal());
         System.out.println("******************************");
     }
 }
