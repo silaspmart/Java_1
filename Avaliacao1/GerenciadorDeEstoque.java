@@ -17,7 +17,7 @@ public class GerenciadorDeEstoque {
         System.out.println("======== MENU PRINCIPAL ========\n");
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-        do {
+        do {  // Iniciei com um "faça/enquanto"
             System.out.println("1) Cadastrar produto");
             System.out.println("2) Buscar produtos");
             System.out.println("3) Listar produtos");
@@ -27,8 +27,8 @@ public class GerenciadorDeEstoque {
             sc.nextLine(); // Limpar a tela
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////
-            switch (opcao) {
-                case 1: // CADASTRAR PRODUTO
+            switch (opcao) { // Daqui pra frente, são varios "escolha/caso" aninhados :)
+                case 1: // CADASTRAR PRODUTOS
                     System.out.println("\n--- Cadastro de Produto ---");
                     System.out.print("Código: ");
                     codigo = sc.nextLong();
@@ -55,7 +55,7 @@ public class GerenciadorDeEstoque {
                     break;
 
         ///////////////////////////////////////////////////////////////////////////////////////
-                case 2: // BUSCAR PRODUTO
+                case 2: // BUSCAR PRODUTOS
                 int opcaoBusca;
                 System.out.println("\n--- Procurar produtos ---");
                 System.out.println("1) Por código");
@@ -77,7 +77,7 @@ public class GerenciadorDeEstoque {
                                 System.out.println("\nProduto encontrado:");
                                 System.out.printf("Nome: %S\n", produtos[i].nome);
                                 System.out.printf("Quantidade: %d\n", produtos[i].qtdEstoque);
-                                System.out.printf("Valor Total: R$ %.2f\n\n", produtos[i].calcularValorTotal());
+                                System.out.printf("Valor total em estoque: R$ %.2f\n\n", produtos[i].calcularValorTotal());
                                 encontrado = true;
                                 break;
                             }
@@ -99,7 +99,7 @@ public class GerenciadorDeEstoque {
                                 System.out.println("\nProduto encontrado:");
                                 System.out.printf("Código: %d\n", produtos[i].codigo);
                                 System.out.printf("Quantidade: %d\n", produtos[i].qtdEstoque);
-                                System.out.printf("Valor Total: R$ %.2f\n\n", produtos[i].calcularValorTotal());
+                                System.out.printf("Valor total em estoque: R$ %.2f\n\n", produtos[i].calcularValorTotal());
                                 encontrado = true;
                         break;
                             }       
@@ -120,12 +120,12 @@ public class GerenciadorDeEstoque {
                                 System.out.printf("Código: %s\n", produtos[i].codigo);
                                 System.out.printf("Nome: %s\n", produtos[i].nome);
                                 System.out.printf("Quantidade: %d\n", produtos[i].qtdEstoque);
-                                System.out.printf("Valor Total: R$ %.2f\n\n", produtos[i].calcularValorTotal());
+                                System.out.printf("Valor total em estoque: R$ %.2f\n\n", produtos[i].calcularValorTotal());
                                 encontrado = true;
                             }
                         }
                     
-                        if (encontrado == false) {
+                        if (encontrado == false) { // Caso o valor não seja encontrado
                             System.out.printf("Nenhum produto encontrado na categoria %s!\n", categoriaBusca);
                         }
                         break;                    
@@ -147,37 +147,51 @@ public class GerenciadorDeEstoque {
                     case 1: // Por nome (ordem alfabética)
                         System.out.println("\n--- Produtos ordenados por nome ---");
 
-                        // Copiar produtos para um novo array do mesmo tamanho real
-                        Produto[] copiaPorNome = new Produto[quantidadeProdutos];
+                        Produto[] copiaPorNome = new Produto[quantidadeProdutos]; // Copiar produtos para um novo array do mesmo tamanho
                         for (int i = 0; i < quantidadeProdutos; i++) {
                             copiaPorNome[i] = produtos[i];
                         }
+                            for (int i = 0; i < copiaPorNome.length - 1; i++) { // Ordenar pelo nome usando bubble sort
+                                for (int j = i + 1; j < copiaPorNome.length; j++) {
+                                    if (copiaPorNome[i].nome.compareToIgnoreCase(copiaPorNome[j].nome) > 0) {
+                                        Produto temp = copiaPorNome[i];
+                                        copiaPorNome[i] = copiaPorNome[j];
+                                        copiaPorNome[j] = temp;
+                                    }
+                                }
+                            }
+                            break;
+                        
+                        case 2: // Por CÓDIGO
+                        System.out.println("\n--- Produtos ordenados por código ---");
 
-                        // Ordenar pelo nome usando bubble sort
-                        for (int i = 0; i < copiaPorNome.length - 1; i++) {
-                            for (int j = i + 1; j < copiaPorNome.length; j++) {
-                                if (copiaPorNome[i].nome.compareToIgnoreCase(copiaPorNome[j].nome) > 0) {
-                                    Produto temp = copiaPorNome[i];
-                                    copiaPorNome[i] = copiaPorNome[j];
-                                    copiaPorNome[j] = temp;
+                        Produto[] copiaPorCodigo = new Produto[quantidadeProdutos]; 
+                        for (int i = 0; i < quantidadeProdutos; i++) {
+                            copiaPorCodigo[i] = produtos[i];
+                        }
+
+                        for (int i = 0; i < copiaPorCodigo.length - 1; i++) { 
+                            for (int j = i + 1; j < copiaPorCodigo.length; j++) {
+                                if (copiaPorCodigo[i].codigo > copiaPorCodigo[j].codigo) {
+                                    Produto temp = copiaPorCodigo[i];
+                                    copiaPorCodigo[i] = copiaPorCodigo[j];
+                                    copiaPorCodigo[j] = temp;
                                 }
                             }
                         }
-
-                        // Exibir os dados
-                        for (int i = 0; i < copiaPorNome.length; i++) {
+                        for (int i = 0; i < copiaPorCodigo.length; i++) { // Exibir os dados na tela
                             System.out.println("-------------------------");
-                            System.out.printf("Nome: %s", copiaPorNome[i].nome);
-                            System.out.printf("Categoria: %d", copiaPorNome[i].categoria);
-                            System.out.printf("Quantidade: %d", copiaPorNome[i].qtdEstoque);
-                            System.out.printf("Valor Total: R$ %.f\n", copiaPorNome[i].calcularValorTotal());
+                            System.out.printf("Código: %s\n", copiaPorCodigo[i].codigo);
+                            System.out.printf("Nome: %s\n", copiaPorCodigo[i].nome);
+                            System.out.printf("Categoria: %s\n", copiaPorCodigo[i].categoria);
+                            System.out.printf("Quantidade: %d\n", copiaPorCodigo[i].qtdEstoque);
+                            System.out.printf("Valor total em estoque: R$ %.2f\n\n", copiaPorCodigo[i].calcularValorTotal());
                         }
                         break;
 
                     default:
                         System.out.println("Opção inválida!\n");
                 }
-
                 break;
             }
         } while (opcao != 4);
