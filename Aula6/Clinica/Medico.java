@@ -52,11 +52,21 @@ public class Medico {
     }
 
     public void setSalario(double salario) {
-        this.salario = salario;
+        if (salario > 0) {
+            this.salario = salario;
+        } else {
+            System.out.println("Salario não pode ser negativo!!!");
+        }
+        
     }
 
     public void setVlrConsulta(double vlrConsulta) {
-        this.vlrConsulta = vlrConsulta;
+        if (vlrConsulta > 0) {
+            this.vlrConsulta = vlrConsulta;
+        } else {
+            System.out.println("Valor não pode ser negativo!!!");
+        }
+        
     }
 
     public static void setTotalMedicos(int totalMedicos) {
