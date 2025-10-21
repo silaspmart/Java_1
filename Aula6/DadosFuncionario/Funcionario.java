@@ -1,8 +1,8 @@
 package Aula6.DadosFuncionario;
 
 public class Funcionario {
-    String nome;
-    double salario;
+    private String nome;
+    private double salario;
 
     public Funcionario (String nome, double salario) {
         this.nome = nome;

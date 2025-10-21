@@ -1,9 +1,9 @@
 package Aula6.CalculoICMS;
 
 public class Produto {
-    String descricao;
-    double valor;
-    int quantidade;
+    private String descricao;
+    private double valor;
+    private int quantidade;
     
     public Produto(String descricao, double valor, int quantidade) {
         this.descricao = descricao;
