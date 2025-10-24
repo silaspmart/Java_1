@@ -1,11 +1,11 @@
 package Avaliacao1;
 
 public class Produto {
-    public long codigo;
-    public String nome;
-    public String categoria;
-    public double preco;
-    public int qtdEstoque;
+    private long codigo;
+    private String nome;
+    private String categoria;
+    private double preco;
+    private int qtdEstoque;
 
     public Produto(long codigo, String nome, String categoria, double preco, int qtdEstoque) {
         this.codigo = codigo;
@@ -15,18 +15,28 @@ public class Produto {
         this.qtdEstoque = qtdEstoque;
     }
 
+    public long getCodigo() { return codigo; }
+    public void setCodigo(long codigo) { this.codigo = codigo; }
+
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
+
+    public String getCategoria() { return categoria; }
+    public void setCategoria(String categoria) { this.categoria = categoria; }
+
+    public double getPreco() { return preco; }
+    public void setPreco(double preco) { this.preco = preco; }
+
+    public int getQtdEstoque() { return qtdEstoque; }
+    public void setQtdEstoque(int qtdEstoque) { this.qtdEstoque = qtdEstoque; }
+
     public double calcularValorTotal() {
         return preco * qtdEstoque;
     }
 
-    public void exibirInformacoes() {
-        System.out.println("******************************");
-        System.out.printf("Código: %s\n", codigo);
-        System.out.printf("Nome: %s\n", nome);
-        System.out.printf("Categoria: %s\n", categoria);
-        System.out.printf("Preço: R$ %.2f\n", preco);
-        System.out.printf("Quantidade em Estoque: %d\n", qtdEstoque);
-        System.out.printf("Valor Total: R$ %.2f\n", calcularValorTotal());
-        System.out.println("******************************");
+    // Exibe informações do produto em tabela
+    public void exibirTabela() {
+        System.out.printf("%-8d | %-20s | %-15s | R$ %8.2f | %5d | R$ %10.2f%n",
+                codigo, nome, categoria, preco, qtdEstoque, calcularValorTotal());
     }
 }
