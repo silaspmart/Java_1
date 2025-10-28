@@ -1,5 +1,7 @@
 package Aula7.Exercicios.Vacinacao;
 
+import Aula7.Pilha.Pessoa;
+
 public class FilaCircular {
     private Pessoa[] elementos;
     private int tamanho;
@@ -44,17 +46,19 @@ public class FilaCircular {
         return tamanho;
     }
     // Mostra todas as pessoas ainda na fila
+    // Mostra todas as pessoas ainda na fila, com posição
     public void exibirFila() {
         if (isEmpty()) {
-            System.out.println("A fila está vazia!");
-            return;
+        System.out.println("A fila está vazia!");
+        return;
         }
 
-        int indice = inicio;
-        for (int i = 0; i < tamanho; i++) {
-            System.out.println(elementos[indice]);
+    int indice = inicio;
+        for (int posicao = 1; posicao <= tamanho; posicao++) {
+            Pessoa pessoa = elementos[indice];
+            System.out.println(posicao + "º - " + pessoa.getNome() + " (" + pessoa.getIdade() + " anos)");
             indice = (indice + 1) % capacidade;
-        }
+         }
     }
 }
 

@@ -65,8 +65,8 @@ public class MenuCadastro {
                         System.out.println("Total cadastrados: " + pilhaCadastros.tamanho());
                     }
                 }
-                case 5 -> System.out.println("👋 Saindo do sistema...");
-                default -> System.out.println("⚠️ Opção inválida! Tente novamente.");
+                case 5 -> System.out.println("Saindo do sistema...");
+                default -> System.out.println("Opção inválida! Tente novamente.");
             }
 
         } while (opcao != 5);
