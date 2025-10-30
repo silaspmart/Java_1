@@ -44,14 +44,16 @@ public class Sistema {
         int opcao;
 
         do {
-            System.out.println("\n\n**** Menu Pomofocus ****\n");
-            System.out.println("1 - Adicionar blocos de foco");
-            System.out.println("2 - Verificar blocos restantes");
-            System.out.println("3 - Modificar tempos");
-            System.out.println("4 - Iniciar ciclos");
-            System.out.println("5 - Logout\n");
+            System.out.println("\n╔══════════════════════════════╗");
+            System.out.println("║        MENU POMOFOCUS        ║");
+            System.out.println("╠══════════════════════════════╣");
+            System.out.println("║ 1 - Adicionar blocos de foco ║");
+            System.out.println("║ 2 - Verificar blocos         ║");
+            System.out.println("║ 3 - Modificar tempos         ║");
+            System.out.println("║ 4 - Iniciar ciclos           ║");
+            System.out.println("║ 5 - Logout                   ║");
+            System.out.println("╚══════════════════════════════╝");
             System.out.print("Opção: ");
-            System.out.println();
             opcao = entrada.nextInt();
             entrada.nextLine();
 
@@ -82,11 +84,15 @@ public class Sistema {
     public void menuPrincipal() {
         int opcao;
         do {
-            System.out.println("\n=== Bem-vindo ao PomoFocus ===");
-            System.out.println("1 > Cadastrar usuário");
-            System.out.println("2 > Fazer login");
-            System.out.println("3 > Sair");
-            System.out.print("\nEscolha uma opção: ");
+            System.out.println("\n╔════════════════════════════════════════╗");
+            System.out.println("║          BEM-VINDO AO POMOFOCUS        ║");
+            System.out.println("╠════════════════════════════════════════╣");
+            System.out.println("║ 1 > Cadastrar usuário                  ║");
+            System.out.println("║ 2 > Fazer login                        ║");
+            System.out.println("║ 3 > Sair                               ║");
+            System.out.println("╚════════════════════════════════════════╝");
+            System.out.print("Escolha uma opção: ");
+
             opcao = entrada.nextInt();
             entrada.nextLine(); // limpar buffer
 
